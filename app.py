@@ -55,6 +55,10 @@ def impact():
 def campaign_details():
     return render_template('campaign-details.html')
 
+@application.route("/explore",methods=['GET', 'POST'])
+def explore():
+    return render_template('explore.html')
+
 if __name__ == "__main__":
     # Run the API server
     print("Starting up Server")

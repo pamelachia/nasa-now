@@ -10,13 +10,17 @@
       <span class="navbar-brand mb-0 h1"></span>
       <span class="navbar-text"> </span>
     </a>
+    <a class="navbar-brand" style="height: 80px;width: 50px;" href="{{url_for('impact')}}">
+      <span class="navbar-brand mb-0 h1"></span>
+      <span class="navbar-text"> </span>
+    </a>
   </nav>
 
 {% for campaign in campaigns %}
 <div style="margin: 10px;margin-bottom: 24px; height:120px" class="card">
   
   <div class="container" style="height:120px">
-    <!-- <a class="card-block stretched-link text-decoration-none" href="{{url_for('campaign_details')}}"> -->
+    <a class="card-block stretched-link text-decoration-none" href="{{url_for('campaign_details')}}">
     <div class="row">
         <div style="padding:0px" class="col-4">
             <img style="width:100%;padding-top: 3px;" src={{campaign.img}} class="card-img" alt="...">
