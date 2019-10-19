@@ -74,5 +74,30 @@ bottom: 125px;
 height: 65px;
 width: 310px;
 left: 30px;"></a>
+
+<a onclick="level2impact()" style="
+position: absolute;
+left: 10px;
+bottom: 20px;
+height: 80px;
+width: 80px;"></a>
+
+<a onclick="level3impact()" style="
+position: absolute;
+right: 10px;
+bottom: 20px;
+height: 80px;
+width: 80px;"></a>
+
+<script type="text/javascript">
+  function level2impact() {
+    console.log('Level 2');
+    $(".container-fluid-impact").css("background-image", "url('/static/images/impact.png')");
+  }
+  function level3impact() {
+    console.log('Level 3');
+    $(".container-fluid-impact").css("background-image", "url('/static/images/impact.png')");
+  }
+</script>
 {% endblock %}
 <!-- "https://twitter.com/share?text='I'm saving the world with NOW app. Check what I have done so far!'" -->
