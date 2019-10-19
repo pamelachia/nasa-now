@@ -1,17 +1,24 @@
 {% extends "index.html" %} {% block content %}
-<!-- <h1>Hello World</h1> -->
-<nav class="navbar navbar-light bg-light">
+<div
+  class="container-fluid"
+  style="background-image:url('/static/images/homepage.png'); background-size: cover; "
+>
+  <nav class="navbar navbar-light">
     <a class="navbar-brand" href="#">
-        <span class="navbar-brand mb-0 h1">Now</span>
-        <!-- <span class="navbar-text">
+      <span class="navbar-brand mb-0 h1">Now</span>
+      <!-- <span class="navbar-text">
          Activites
         </span> -->
     </a>
   </nav>
-<div class="container-fluid">
   <div class="row d-flex align-items-center justify-content-center">
     <div class="row" style="margin: 20px;">
-      <a href="{{url_for('campaigns')}}" class="btn btn-outline-primary btn-lg btn-block" role="button">Volunteer</a>
+      <a
+        href="{{ url_for('campaigns') }}"
+        class="btn btn-outline-primary btn-lg btn-block"
+        role="button"
+        >Volunteer</a
+      >
     </div>
     <div class="w-100"></div>
     <div class="row" style="margin: 20px;">
@@ -27,5 +34,5 @@
     </div>
   </div>
 
-
-{% endblock %}
+  {% endblock %}
+</div>
