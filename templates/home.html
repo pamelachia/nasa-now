@@ -1,9 +1,25 @@
-{% extends "index.html" %}
+{% extends "index.html" %} {% block content %}
+<!-- <h1>Hello World</h1> -->
 
-{% block content %}
-<h1>Hello World</h1>
-
-<div class="alert alert-primary" role="alert">
-    Test Alert
+<div class="container-fluid">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="row" style="margin: 20px;">
+      <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+        Volunteer
+      </button>
+    </div>
+    <div class="w-100"></div>
+    <div class="row" style="margin: 20px;">
+      <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+        Donor
+      </button>
+    </div>
+    <div class="w-100"></div>
+    <div class="row" style="margin: 20px;">
+      <button type="button" class="btn btn-outline-primary btn-lg btn-block">
+        Land Owner
+      </button>
+    </div>
   </div>
+</div>
 {% endblock %}
