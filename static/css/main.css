@@ -32,6 +32,12 @@ h5 {
   height: 812px;
 }
 
+.container-fluid-details {
+    background-image: url(/static/images/details.png);
+    background-size: cover;
+    height: 812px;
+  }
+
 .button-design {
   margin: 200px auto;
 }
