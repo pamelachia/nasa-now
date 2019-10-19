@@ -37,6 +37,11 @@ h5 {
     background-size: cover;
     height: 812px;
   }
+.container-fluid-impact {
+  background-image: url(/static/images/impact.png);
+  background-size: cover;
+  height: 812px;
+}
 
 .button-design {
   margin: 200px auto;
