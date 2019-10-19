@@ -6,7 +6,7 @@
   style="background-image:url('/static/images/campaign.png'); background-size: cover; "
 >
 <nav class="navbar navbar-light" style='height:100px'>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{url_for('home')}}">
       <span class="navbar-brand mb-0 h1"></span>
       <span class="navbar-text"> </span>
     </a>
@@ -16,20 +16,20 @@
 <div style="margin: 10px;margin-bottom: 24px; height:120px" class="card">
   
   <div class="container" style="height:120px">
-    <a class="card-block stretched-link text-decoration-none" href="{{url_for('campaign_details')}}">
+    <!-- <a class="card-block stretched-link text-decoration-none" href="{{url_for('campaign_details')}}"> -->
     <div class="row">
         <div style="padding:0px" class="col-4">
-            <img style="width:100%; padding: 7px;" src="/static/images/faces/face1.jpg" class="card-img" alt="...">
+            <img style="width:100%;padding-top: 3px;" src={{campaign.img}} class="card-img" alt="...">
         </div>
         <div class="col-8">
           <!-- Inner Card -->
           <div class=row>
             <!-- Campaign Info -->
             <div class="col-12">
-              <h5 style="margin-bottom: 4px; font-size: 14px; margin-top: 16px; color:#775436" class="campaign-title">Campaign Title</h5>
-              <p style= "font-size:10px; margin-bottom:0px; color:black" class="card-text font-weight-lighter">Volunteer 5/15 </p>
-              <p style= "font-size:10px; margin-bottom:3px; color:black" class="card-text font-weight-lighter">Bukit Nanas, Kuala Lumpur </p>
-              <p style= "font-size:10px; margin-bottom:3px; color:black" class="card-text font-weight-light">RM 13 300 </p>
+              <h5 style="margin-bottom: 4px; font-size: 14px; margin-top: 16px; color:#775436" class="campaign-title">{{campaign.title}}</h5>
+              <p style= "font-size:10px; margin-bottom:0px; color:black" class="card-text font-weight-lighter">{{campaign.volunteer}} </p>
+              <p style= "font-size:10px; margin-bottom:3px; color:black" class="card-text font-weight-lighter">{{campaign.location}} </p>
+              <p style= "font-size:10px; margin-bottom:3px; color:black" class="card-text font-weight-light">{{campaign.price}} </p>
 
               <!-- <ion-icon style='height:14px' name="logo-usd"></ion-icon>
               <ion-icon style='height:14px' name="logo-usd"></ion-icon>
@@ -42,7 +42,7 @@
           </div>
           <!-- Progress Bar -->
           <div class="progress" style='height:8px'>
-            <div class="progress-bar" role="progressbar" style="width: 60%; height:8px; background-color: #4DA680A3 !important;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 60%; height:8px; background-color: #4ba97d !important;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
     </div>
