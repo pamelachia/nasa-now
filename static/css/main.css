@@ -33,6 +33,14 @@ h5 {
 .btn-block {
   width: 200px !important;
 }
+
+.indiv-btn {
+  font-size: 20px !important;
+  color: #c37813 !important;
+  border: 1px solid #80808033 !important;
+  border-radius: 25px !important;
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2) !important;
+}
 /* .clickable{
     position: relative;
   }
