@@ -15,14 +15,16 @@ def home():
 
 @application.route("/campaigns",methods=['GET', 'POST'])
 def campaigns():
-    print('click')
-
     campaigns = {
         1: '1',
         2: '2',
         3: '3'
     }
     return render_template('campaigns.html', campaigns=campaigns)
+
+@application.route("/campaign_details",methods=['GET', 'POST'])
+def campaign_details():
+    return render_template('campaign-details.html')
 
 if __name__ == "__main__":
     # Run the API server
