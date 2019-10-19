@@ -1,5 +1,14 @@
 {% extends "index.html" %}
 
 {% block content %}
-<h1>Hellow</h1>
+<a href="{{ url_for('home') }}" style="
+position: absolute;
+top: 60px;
+height: 30px;
+width: 40px;
+left: 12px;"></a>
+<div
+  class="container-fluid"
+  style="background-image:url('/static/images/explore.png'); background-size: cover; "
+>
 {% endblock %}

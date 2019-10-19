@@ -59,6 +59,10 @@ def campaign_details():
 def explore():
     return render_template('explore.html')
 
+@application.route("/contribution",methods=['GET', 'POST'])
+def contribution():
+    return render_template('contribution.html')
+
 if __name__ == "__main__":
     # Run the API server
     print("Starting up Server")
