@@ -19,6 +19,20 @@ a {
 h5 {
   font-size: 16px;
 }
+
+.container-fluid {
+  background-image: url(/static/images/homepage.png);
+  background-size: cover;
+  height: 812px;
+}
+
+.button-design {
+  margin: 200px auto;
+}
+
+.btn-block {
+  width: 200px !important;
+}
 /* .clickable{
     position: relative;
   }
