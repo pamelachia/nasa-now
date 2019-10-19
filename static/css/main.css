@@ -27,10 +27,10 @@ h5 {
 }
 
 .container-fluid-campaign {
-    background-image: url(/static/images/campaign.png);
-    background-size: cover;
-    height: 812px;
-  }
+  background-image: url(/static/images/campaign.png);
+  background-size: cover;
+  height: 812px;
+}
 
 .button-design {
   margin: 200px auto;
@@ -39,7 +39,9 @@ h5 {
 .btn-block {
   width: 200px !important;
 }
-
+.btn-social {
+  color: #4ba97d !important;
+}
 .indiv-btn {
   font-size: 20px !important;
   color: #c37813 !important;
