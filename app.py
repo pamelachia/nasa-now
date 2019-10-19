@@ -24,6 +24,10 @@ def campaigns():
     }
     return render_template('campaigns.html', campaigns=campaigns)
 
+@application.route("/impact", methods=['GET','POST'])
+def impact():
+    return render_template('impact.html')
+
 if __name__ == "__main__":
     # Run the API server
     print("Starting up Server")
