@@ -15,8 +15,6 @@ def home():
 
 @application.route("/campaigns",methods=['GET', 'POST'])
 def campaigns():
-    print('click')
-
     campaigns = {
         1: '1',
         2: '2',
@@ -27,6 +25,10 @@ def campaigns():
 @application.route("/impact", methods=['GET','POST'])
 def impact():
     return render_template('impact.html')
+
+@application.route("/campaign_details",methods=['GET', 'POST'])
+def campaign_details():
+    return render_template('campaign-details.html')
 
 if __name__ == "__main__":
     # Run the API server

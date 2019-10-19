@@ -1,5 +1,45 @@
 {% extends "index.html" %}
 
 {% block content %}
+<a class="stretched-link text-decoration-none" href="{{url_for('campaigns')}}">
+    <ion-icon style='font-size: 32px;' name="arrow-back"></ion-icon>
+</a>
+
+<div>
+    <img style="width:80%;height:20%;display: block;
+    margin-left: auto;margin-right: auto; margin-bottom: 6px;" src="/static/images/environment.svg" alt="...">
+</div>
+
+<div class="card" >
+    <div class="card-body" style='background-color: aliceblue;padding-top:5px; padding-bottom: 5px;'>
+        <h5 style="margin-bottom: 0px; font-size: 16px; margin-top: 4px; " class="campaign-title">Campaign Title</h5>
+        <!-- <span><ion-icon name="pin"></ion-icon></span> -->
+        <p style= "font-size:12px; margin-bottom:3px" class="card-text font-weight-lighter">Location Text </p>
+        <h5 style="margin-bottom: 0px; font-size: 16px; margin-top: 8px; " class="campaign-title">Description</h5>
+        <p style= "font-size:12px; margin-bottom:3px" class="card-text font-weight-lighter">Lorem ipsum bla bla bla </p>
+
+    </div>
+    <div class="card-body">
+        <h5 style="margin-bottom: 0px; font-size: 16px; margin-top: 8px; " class="campaign-title">Something</h5>
+        <p style= "font-size:12px; margin-bottom:3px" class="card-text font-weight-lighter">Lorem ipsum bla bla bla </p>
+        <h5 style="margin-bottom: 0px; font-size: 16px; margin-top: 8px; " class="campaign-title">Something</h5>
+        <p style= "font-size:12px; margin-bottom:3px" class="card-text font-weight-lighter">Lorem ipsum bla bla bla </p>
+        <h5 style="margin-bottom: 0px; font-size: 16px; margin-top: 8px; " class="campaign-title">Something</h5>
+        <p style= "font-size:12px; margin-bottom:3px" class="card-text font-weight-lighter">Lorem ipsum bla bla bla </p>
+
+    </div>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-6'>
+                <a class="btn btn-primary btn-block" href="#" role="button">Just Plant a Tree</a>
+            </div>
+            <div class='col-6'>
+                <a class="btn btn-primary btn-block" href="#" role="button">Organise</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+</div>
 
 {% endblock %}

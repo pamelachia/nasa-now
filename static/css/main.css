@@ -11,3 +11,21 @@
 .dollar-icon {
     height: 14px;
 }
+
+a {
+    color: black;
+}
+
+h5 {
+    font-size:16px;
+}
+/* .clickable{
+    position: relative;
+  }
+.clickable a{
+position: absolute;
+width:100%;
+height:100%;
+top:0px;
+left:0px;
+} */
