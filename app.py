@@ -21,28 +21,32 @@ def campaigns():
             'title': 'Bukit Nanas Degradation',
             'volunteer': '5/15',
             'location': 'Bukit Nanas, Kuala Lumpur',
-            'price': 'RM 13 370'
+            'price': 'RM 13 370',
+            'width': "60%"
         },
         {
             'img':'/static/images/Kenyans-with-idle-land-to-lose-titles.png',
             'title': 'MaGIC’s Compound',
             'volunteer': '2/7',
             'location': 'MaGIC, Cyberjaya',
-            'price': 'RM 10 350'
+            'price': 'RM 10 350',
+            'width': "35%"
         },
         {
             'img':'/static/images/images.png',
             'title': 'FRIM Camp Site',
             'volunteer': '9/10',
             'location': 'FRIM, Kepong',
-            'price': 'RM 25 000'
+            'price': 'RM 25 000',
+            'width': "60%"
         },
         {
             'img':'/static/images/yq-malaysiapalm-04032010.png',
             'title': 'Daren’s Backyard',
             'volunteer': '0/2',
             'location': 'Puchong, Selangor',
-            'price': 'RM 700'
+            'price': 'RM 700',
+            'width': "10%"
         },
     ]
     return render_template('campaigns.html', campaigns=campaigns)

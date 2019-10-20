@@ -48,7 +48,7 @@ h5 {
 }
 
 .btn-block {
-  width: 200px !important;
+  width: 250px !important;
 }
 .btn-social {
   color: #4ba97d !important;
@@ -64,6 +64,11 @@ em {
   color: #c37813;
   font-size: 40px;
 }
+
+strong {
+    color: #c37813;
+    font-size: 40px;
+  }
 /* .clickable{
     position: relative;
   }
