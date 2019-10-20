@@ -60,9 +60,9 @@ def impact():
         'hours':17
         },
         {
-        'trees' : 9,
-        'co2': 217,
-        'hours':17
+        'trees' : 30,
+        'co2': 417,
+        'hours':43
         },
 
     ]
