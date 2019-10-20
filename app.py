@@ -53,7 +53,20 @@ def campaigns():
 
 @application.route("/impact", methods=['GET','POST'])
 def impact():
-    return render_template('impact.html')
+    impact_dict = [
+        {
+        'trees' : 9,
+        'co2': 217,
+        'hours':17
+        },
+        {
+        'trees' : 9,
+        'co2': 217,
+        'hours':17
+        },
+
+    ]
+    return render_template('impact.html', impact=impact_dict[0])
 
 @application.route("/campaign_details",methods=['GET', 'POST'])
 def campaign_details():

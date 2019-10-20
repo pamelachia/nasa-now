@@ -25,8 +25,8 @@
       style="position: absolute;
     left: 50px; top: 310px"
     >
-      <strong style="width: 56px;
-      margin-right: 10px;">&nbsp;&nbsp;9&nbsp;&nbsp;</strong> Trees Planted
+      <strong class='tree' style="width: 56px;
+      margin-right: 10px;">&nbsp;&nbsp;{{impact.trees}}&nbsp;&nbsp;</strong> Trees Planted
     </p>
     <p
       class="card-text-impact"
@@ -34,7 +34,7 @@
     left: 50px; top: 390px"
     >
       <strong style='width: 56px;
-      margin-right: 10px;'>217</strong>&nbsp; kg CO2 Emissions reduced
+      margin-right: 10px;'>{{impact.co2}}</strong>&nbsp; kg CO2 Emissions reduced
     </p>
     <p
       class="card-text-impact"
@@ -42,7 +42,7 @@
     left: 50px; top: 470px"
     >
       <strong style="width: 56px;
-      margin-right: 10px;">&nbsp;14&nbsp;</strong> &nbsp;Hours Volunteered
+      margin-right: 10px;">&nbsp;{{impact.hours}}&nbsp;</strong> &nbsp;Hours Volunteered
     </p>
     <br />
     <div class="card-body">
@@ -96,7 +96,8 @@ width: 80px;"></a>
 <script type="text/javascript">
   function level2impact() {
     console.log('Level 2');
-    $(".container-fluid-impact").css("background-image", "url('/static/images/impact.png')");
+    $(".container-fluid-impact").css("background-image", "url('/static/images/impact2.png')");
+    $(".container-fluid-impact").html("<span class='spent_time'>2.5 h</span> <span class=");
   }
   function level3impact() {
     console.log('Level 3');
