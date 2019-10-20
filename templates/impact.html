@@ -25,7 +25,7 @@
       style="position: absolute;
     left: 50px; top: 310px"
     >
-      <strong class='tree' style="width: 56px;
+      <strong id='tree' style="width: 56px;
       margin-right: 10px;">&nbsp;&nbsp;{{impact.trees}}&nbsp;&nbsp;</strong> Trees Planted
     </p>
     <p
@@ -33,7 +33,7 @@
       style="position: absolute;
     left: 50px; top: 390px"
     >
-      <strong style='width: 56px;
+      <strong id='co2' style='width: 56px;
       margin-right: 10px;'>{{impact.co2}}</strong>&nbsp; kg CO2 Emissions reduced
     </p>
     <p
@@ -41,7 +41,7 @@
       style="position: absolute;
     left: 50px; top: 470px"
     >
-      <strong style="width: 56px;
+      <strong id='hours' style="width: 56px;
       margin-right: 10px;">&nbsp;{{impact.hours}}&nbsp;</strong> &nbsp;Hours Volunteered
     </p>
     <br />
@@ -97,11 +97,17 @@ width: 80px;"></a>
   function level2impact() {
     console.log('Level 2');
     $(".container-fluid-impact").css("background-image", "url('/static/images/impact2.png')");
-    
+    document.getElementById("tree").innerHTML = "&nbsp;21&nbsp;";
+    document.getElementById("co2").innerHTML = "&nbsp;417&nbsp;";
+    document.getElementById("hours").innerHTML = "&nbsp;43&nbsp;";
+    $(".tree").css("margin-right", '0px');
   }
   function level3impact() {
     console.log('Level 3');
-    $(".container-fluid-impact").css("background-image", "url('/static/images/impact.png')");
+    $(".container-fluid-impact").css("background-image", "url('/static/images/impact3.png')");
+    document.getElementById("tree").innerHTML = "&nbsp;150&nbsp;";
+    document.getElementById("co2").innerHTML = "&nbsp;1417&nbsp;";
+    document.getElementById("hours").innerHTML = "&nbsp;200&nbsp;";
   }
 </script>
 {% endblock %}
